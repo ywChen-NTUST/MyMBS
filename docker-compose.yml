@@ -1,0 +1,38 @@
+version: "3"
+services:
+  web:
+    build: ./web-image
+    hostname: web
+    ports:
+      - "8000:80"
+    environment:
+      DB_SERVER_HOST: database
+      DB_SERVER_PORT: ${MYSQL_PORT}
+      DB_SERVER_USER: ${MYSQL_USER}
+      DB_SERVER_PASSWORD: ${MYSQL_PASSWORD}
+      DB_SERVER_DB: ${MYSQL_DB}
+    working_dir: /var/www/html/
+    volumes:
+      - ./www:/var/www/html/
+      - ./config/custom_php.ini:/usr/local/etc/php/conf.d/custom_php.ini
+    restart: unless-stopped
+    # hostname: demo.ywcweb.engineer
+
+  database:
+    image: mysql:8.0.28
+    hostname: database
+    environment:
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_TCP_PORT: ${MYSQL_PORT}
+      MYSQL_DATABASE: ${MYSQL_DB}
+      ADMIN_ACCOUNT: ${ADMIN_ACCOUNT}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+      ADMIN_PROFILE: ${ADMIN_PROFILE}
+    # volumes:
+    volumes:
+      - ./db/initial:/docker-entrypoint-initdb.d
+      - ./db/persist:/var/lib/mysql
+    restart: unless-stopped
+    # hostname: demo.ywcweb.engineer

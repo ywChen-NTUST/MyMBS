@@ -1,0 +1,64 @@
+main > .signup
+{
+    background-color: white;
+    min-height: 600px;
+    box-shadow: 5px 0 3px rgba(0, 0, 0, 0.5), -5px 0 5px rgba(0, 0, 0, 0.5);
+}
+main > .signup > p
+{
+    font-size: 32px;
+    margin-left: 30px;
+}
+main > .signup div
+{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+main > .signup div > label
+{
+    font-size: 16px;
+    display: inline;
+}
+main > .signup div > input
+{
+    width: 80%;
+    height: 24px;
+}
+main > .signup .submit
+{
+    background-color: rgb(121, 159, 229);
+    border: 2px solid rgb(94, 138, 218);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    width: 100px;
+    height: 30px;
+}
+main > .signup .submit:hover
+{
+    cursor: pointer;
+}
+main > .signup .fileUpload
+{
+    margin-right: 10%;
+    padding-bottom: 20px;
+    border: 1px dashed darkcyan;
+}
+main > .signup .fileUpload > label
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    display: block;
+}
+main > .signup .fileUpload > input
+{
+    margin-left: 30px;
+}
+main > .signup .fileUpload > .or
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+}

@@ -1,0 +1,162 @@
+::-webkit-scrollbar
+{
+    width: 8px;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: rgb(180, 180, 180);
+    border: 2px solid rgb(180, 180, 180);
+    border-radius: 10px;
+}
+p
+{
+    font-family: monospace;
+}
+label
+{
+    font-family: monospace;
+}
+a:link
+{
+    height: 100%;
+    margin: 0;
+    text-decoration: none;
+    background-color: inherit;
+    color: inherit;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+}
+header {
+    background-color: cornflowerblue;
+    height: 60px;
+    margin: 0px;
+}
+header div {
+    height: 100%;
+    text-align: center;
+}
+header div:hover {
+    cursor: pointer;
+}
+header div > p {
+    font-size: 20px;
+    font-family: monospace;
+    display: inline;
+    position: relative;
+    top: 15px;
+}
+
+nav {
+    background-color: #495c78;
+    height: 40px;
+    margin: 0px;
+}
+nav > .main {
+    width: 55%;
+    float: left;
+}
+nav > .account {
+    width: 45%;
+    float: right;
+}
+nav > div div {
+    height: fit-content;
+    text-align: center;
+    height: 40px;
+}
+nav > div .clickable:hover
+{
+    background-color: #4a6896;
+    cursor: pointer;
+}
+nav > .main div {
+    float: left;
+}
+nav > .main > .empty {
+    width: 70px;
+}
+nav > .account div {
+    float: right;
+}
+nav > .account > .empty {
+    height: 30px;
+    width: 30px;
+}
+nav > .account .user {
+    max-width: 400px;
+    text-align: left;
+}
+nav > div div > p {
+    color: #e0e1ff;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: monospace;
+    display: inline;
+    position: relative;
+    top: 10px;
+    margin: 10px;
+}
+nav > .account .user > img {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 7px;
+    right: 5px;
+}
+nav > .account .user > p {
+    float: right;
+    top: 2px;
+    margin-left: 0px;
+}
+
+main {
+    min-height: 600px;
+    
+    /* magic: https://stackoverflow.com/a/20352949 */
+    display:flex; 
+    flex-direction:column;
+    background-color: #fffff4;
+}
+main > div
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+main > div::-webkit-scrollbar
+{
+    width: 6px;
+}
+main > div::-webkit-scrollbar-thumb
+{
+    background-color: rgb(180, 180, 180);
+    border: 2px solid rgb(180, 180, 180);
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #000046;
+    height: 60px;
+    width: 100%;
+    margin: 0px;
+
+    /* magic: https://stackoverflow.com/a/20352949 */
+    margin-top: auto;
+}
+footer > div {
+    height: 100%;
+    text-align: left;
+}
+footer > div > p {
+    color:linen;
+    font-size: 14px;
+    font-family: monospace;
+    display: inline;
+    position: relative;
+    top: 20px;
+    left: 35px;
+}

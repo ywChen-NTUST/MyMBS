@@ -1,0 +1,144 @@
+main > .messageContainer {
+    background-color: white;
+    min-height: 530px;
+    max-height: 530px;
+    overflow-y: scroll;
+    box-shadow: 5px 0 3px rgba(0, 0, 0, 0.5), -5px 0 5px rgba(0, 0, 0, 0.5);
+}
+main > .messageContainer > div
+{
+    width: 98%;
+    margin-left: 5px;
+    margin-bottom: 16px;
+    margin-top: 5px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(180, 180, 180);
+    border-radius: 10px;
+}
+main > .messageContainer > div > a > .user
+{
+    margin-bottom: 7px;
+}
+main > .messageContainer > div > a > .user > img
+{
+    height: 25px;
+    width: 25px;
+    display: inline;
+    position: relative;
+    top: 7px;
+}
+main > .messageContainer > div > a > .user > p
+{
+    width: 50%;
+    margin: 0;
+    display: inline;
+}
+main > .messageContainer > div > a > .user > .sequence
+{
+    padding: 0 3px 0 3px;
+    display: inline;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+}
+main > .messageContainer > div > a > .user > form
+{
+    display: inline;
+}
+main > .messageContainer > div > a > .user .delete
+{
+    height: 20px;
+    width: 20px;
+    margin-right: 7px;
+    margin-top: 10px;
+    float: right;
+}
+main > .messageContainer > div > a > .user .delete:hover
+{
+    background-color: rgb(255, 222, 222);
+}
+main > .messageContainer > div > a > .content
+{
+    word-wrap: break-word;
+    margin: 10px;
+}
+main > .messageContainer > div > a > .content > p
+{
+    margin: 0;
+}
+main > .messageContainer > div > .download
+{
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 10px;
+}
+main > .messageContainer > div > .download:hover
+{
+    background-color: rgb(232, 232, 232);
+    cursor: pointer;
+}
+main > .messageContainer > div > .download img
+{
+    height: 25px;
+    width: 25px;
+    display: inline;
+    position: relative;
+    top: 7px;
+}
+main > .messageContainer > div > .download p
+{
+    display: inline;
+    padding: 0 4px 0 2px;
+}
+main > .messageContainer > .deleted p
+{
+    color: lightgray;
+}
+
+main > .sendMessage
+{
+    height: 30px;
+    margin-top: 7px;
+}
+main > .sendMessage .message
+{
+    width: 85%;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+}
+main > .sendMessage .submit
+{
+    width: 13%;
+    padding: 0;
+    margin: 0;
+}
+main > .sendMessage p
+{
+    display: inline;
+}
+main > .sendMessage .file
+{
+    margin-top: 5px;
+}
+
+main > .banner
+{
+    height: 30px;
+    margin-top: 7px;
+}
+main > .banner > div
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+main > .banner > div > p
+{
+    font-size: 20px;
+    text-align: center;
+}
+main > .banner > div > p > a
+{
+    color: cadetblue;
+}
