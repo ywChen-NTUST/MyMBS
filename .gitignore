@@ -1,4 +1,4 @@
 .env
 db/persist/*
 www/profile_photo/0*
-www/attachments/*
+www/attachments/0*
