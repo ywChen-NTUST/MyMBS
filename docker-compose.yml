@@ -16,7 +16,6 @@ services:
       - ./www:/var/www/html/
       - ./config/custom_php.ini:/usr/local/etc/php/conf.d/custom_php.ini
     restart: unless-stopped
-    # hostname: demo.ywcweb.engineer
 
   database:
     image: mysql:8.0.28
@@ -30,9 +29,7 @@ services:
       ADMIN_ACCOUNT: ${ADMIN_ACCOUNT}
       ADMIN_PASSWORD: ${ADMIN_PASSWORD}
       ADMIN_PROFILE: ${ADMIN_PROFILE}
-    # volumes:
     volumes:
       - ./db/initial:/docker-entrypoint-initdb.d
       - ./db/persist:/var/lib/mysql
     restart: unless-stopped
-    # hostname: demo.ywcweb.engineer
