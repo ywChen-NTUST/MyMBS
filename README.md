@@ -17,5 +17,5 @@ cp .env.template .env
 
 3. run container
 ```bash=
-docker-compose up -d
+docker-compose up -d --build
 ```
