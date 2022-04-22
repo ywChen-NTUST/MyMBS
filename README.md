@@ -55,7 +55,11 @@ docker-compose up -d --build
 
 5. (Optional) Setup domain name
 
-    1. modify `config/mymbs_nginx.conf`
+    1. copy `config/mymbs_nginx.conf.example` to `config/mymbs_nginx.conf` and modify
+        ```bash
+        cp config/mymbs_nginx.conf.example config/mymbs_nginx.conf
+        # modify config/mymbs_nginx.conf
+        ```
 
         Basicly, only needs to modify `server_name` to your domain name
 

@@ -2,3 +2,4 @@
 db/persist/*
 www/profile_photo/0*
 www/attachments/0*
+config/mymbs_nginx.conf
