@@ -63,7 +63,12 @@ docker-compose up -d --build
         ```bash
         cp config/mymbs_nginx.conf /etc/nginx/sites-enabled/
         ```
-    3. restart nginx
+
+    3. (Optional) hide server information
+
+        Goto `/etc/nginx/nginx.conf` and uncomment line 22: `server_tokens off;`
+
+    4. restart nginx
         ```bash
         service nginx restart
         ```
