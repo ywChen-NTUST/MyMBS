@@ -1,4 +1,25 @@
 # My Message Board System
+
+## prerequisite
+
+### hardware requirements
+
+- OS
+    - Ubuntu 20.04 LTS
+- Memory
+    - Minimal: 1 GB
+    - Suggest: 2+ GB
+- Disk
+    - Minimal: 512 MB
+    - Suggest: 16+ GB
+
+### Software requirements
+
+- docker 20.10
+- docker-compose 1.29
+- (Optional) nginx 1.18
+- (Optional) certbot 1.26.0
+
 ## build
 
 0. clone project
@@ -21,7 +42,7 @@ cp .env.template .env
 ## for ADMIN_PROFILE, place the image name which you store in www/profile_photo (i.e. 01_administrator.jpg)
 ```
 
-3. change owner of the `www/attachments/` and `www/profile_photo` directory to `www-data`
+3. change owner of the `www/attachments/` and `www/profile_photo/` directory to `www-data`
 ```bash
 chown www-data:www-data www/profile_photo/
 chown www-data:www-data www/attachments/
@@ -78,7 +99,13 @@ scp -r <old_server_username>@<old_server_ip>:<project_dir>/www/profile_photo ./w
 scp -r <old_server_username>@<old_server_ip>:<project_dir>/www/attachments ./www/
 ```
 
-3. rebuild containers
+3. change owner of the `www/attachments/` and `www/profile_photo/` directory to `www-data`
+```bash
+chown www-data:www-data www/profile_photo/
+chown www-data:www-data www/attachments/
+```
+
+4. rebuild containers
 ```bash
 docker-compose up -d --build
 ```
