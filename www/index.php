@@ -1474,7 +1474,7 @@
         </main>
         <footer>
             <div>
-                <p> Copyright&copy; 2022 ntust-B10715029 </p>
+                <p> Author: ywChen-NTUST (ntust B10715029). MIT License </p>
             </div>
         </footer>
     </body>
