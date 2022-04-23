@@ -1282,7 +1282,7 @@
                                 print("\t\t\t\t\t<a href=\"?page=singlemessage&mid=$mid\">\r\n");
                                 print("\t\t\t\t\t\t<div class=\"user\">\r\n");
                                 print("\t\t\t\t\t\t\t<img src=\"" . verifyProfile("profile_photo", $row['profile']) . "\" />\r\n");
-                                print("\t\t\t\t\t\t\t<p> " . $row['username'] . " </p>\r\n");
+                                print("\t\t\t\t\t\t\t<p> " . preventXSS($row['username']) . " </p>\r\n");
                                 print("\t\t\t\t\t\t\t<p class=\"sequence\"> #$mid </p>\r\n");
                                 if(isset($uid) && $uid == $row['uid'])
                                 {
@@ -1438,7 +1438,7 @@
                         print("\t\t\t\t<div>\r\n");
                         print("\t\t\t\t\t<div class=\"user\">\r\n");
                         print("\t\t\t\t\t\t<img src=\"" . verifyProfile("profile_photo", $row['profile']) . "\" />\r\n");
-                        print("\t\t\t\t\t\t<p> " . $row['username'] . " </p>\r\n");
+                        print("\t\t\t\t\t\t<p> " . preventXSS($row['username']) . " </p>\r\n");
                         print("\t\t\t\t\t\t<p class=\"sequence\"> #$mid </p>\r\n");
                         if(isset($uid) && $uid == $row['uid'])
                         {
