@@ -66,6 +66,10 @@ main > .messageContainer > div > a > .content > p
 {
     margin: 0;
 }
+main > .messageContainer > div > a > .content > p > img
+{
+    max-width: 100%;
+}
 main > .messageContainer > div > .download
 {
     width: fit-content;
